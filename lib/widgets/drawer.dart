@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/utils/routes.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -41,6 +42,9 @@ class MyDrawer extends StatelessWidget {
                 CupertinoIcons.profile_circled,
                 color: Colors.white,
               ),
+              onTap: () {
+                Navigator.pushNamed(context, MyRoutes.homeRoute);
+              },
               title: Text(
                 "Profile",
                 textScaleFactor: 1.2,
